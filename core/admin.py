@@ -5,3 +5,4 @@ from .models import Books
 @admin.register(Books)
 class BooksAdmin(admin.ModelAdmin):
     list_display = ('name', 'author', 'pages', 'created')
+    search_fields = ['name']
